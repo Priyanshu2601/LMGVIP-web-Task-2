@@ -1,5 +1,5 @@
+import "./App.css";
 import React, { useState } from "react";
-import './App.css'
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -10,10 +10,10 @@ const App = () => {
     setUsers(jsonResponse);
   };
 
-  return (
+    return (  
     <div className="App">
-      <h1>Hello All</h1>
-      <button onClick={loadUsers}>Get Data</button>
+      <h1>github</h1>
+      <button className="btn1" onClick={loadUsers}>Get Users</button>
 
       <h2>Users:</h2>
       <ul>
@@ -24,8 +24,8 @@ const App = () => {
         ))}
       </ul>
     </div>
-  );
-};
+    )
+        }
+
 
 export default App;
-
